@@ -1,0 +1,20 @@
+{% extends "AppEstetic/padre.html" %}
+
+{% load static %}
+
+{% block titulo %}
+<h1 class="mb-5">Resultados de la busqueda de paciente con turnos reservados</h1>
+{% endblock %}
+
+{% block contenido %}
+
+
+<ul>
+    {% for nombre in contacto in contacto %}
+        <li>{{busquedaContacto.nombre}}</li>
+        <li>{{busquedaContacto.apellido}}</li>
+        <br>
+    {% endfor %}
+</ul>
+
+{% endblock %}

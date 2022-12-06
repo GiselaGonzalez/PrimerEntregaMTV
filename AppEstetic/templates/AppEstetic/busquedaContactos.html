@@ -1,0 +1,18 @@
+{% extends "AppEstetic/padre.html" %}
+
+{% load static %}
+
+{% block titulo %}
+<h1 class="mb-5">Formulario de Busqueda</h1>
+{% endblock %}
+
+{% block contenido %}
+
+<form action="{% url 'busquedaContactos' %}" method="GET">
+
+    <input type="text" name="nombre" id="apellido">
+    <input type="submit" value="buscar">
+</form>
+
+
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "AppEstetic/padre.html" %}
+
+{% load static %}
+
+{% block titulo %}
+<h1 class="mb-5">Formulario de Contacto</h1>
+{% endblock %}
+
+{% block contenido %}
+<h1>Reservar Turno</h1>
+
+<form action="{% url 'paciente_Formulario' %}" method="POST"> {% csrf_token %}
+
+<p> nombre:   <input  type="text" name="nombre"></p>
+<p> apellido:   <input  type="text" name="apellido"></p>
+<input type="submit" value="Enviar Datos">
+
+</form>
+
+
+{% endblock %}
